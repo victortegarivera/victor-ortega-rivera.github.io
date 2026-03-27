@@ -1,176 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Víctor Ortega Rivera</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Víctor Ortega Rivera | Portafolio</title>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+<style>
+:root {
+    --azul: #0a66c2;
+    --azul-oscuro: #0a2540;
+    --gris: #f4f6f9;
+}
 
-        header {
-            background: #24292e;
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--gris);
+    color: #333;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+/* HEADER IMPACTO */
+.hero {
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--azul));
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
 
-        header p {
-            opacity: 0.8;
-        }
+.hero h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
 
-        section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
 
-        h2 {
-            color: #0366d6;
-            border-bottom: 2px solid #eaecef;
-            padding-bottom: 5px;
-        }
+/* BOTONES */
+.botones a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 18px;
+    background: white;
+    color: var(--azul);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+.botones a:hover {
+    background: #eaeaea;
+}
 
-        .contact-links a {
-            display: inline-block;
-            margin-right: 15px;
-            text-decoration: none;
-            color: #0366d6;
-            font-weight: bold;
-        }
+/* SECCIONES */
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
 
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
+h2 {
+    color: var(--azul);
+}
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-        }
-    </style>
+/* GRID PROYECTOS */
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACTO */
+.contacto a {
+    margin-right: 15px;
+    color: var(--azul);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>ING. MECATRÓNICA VÍCTOR ORTEGA RIVERA</h1>
-    <p>Especialista en Mantenimiento | Data Science en formación</p>
-</header>
+<!-- HERO -->
+<div class="hero">
+    <h1>Víctor Ortega Rivera</h1>
+    <p>Ingeniero Mecatrónico | Especialista en Mantenimiento | Data Science</p>
 
+    <div class="botones">
+        <a href="https://www.linkedin.com/in/victor-ortega-rivera-data-analyst" target="_blank">LinkedIn</a>
+        <a href="https://github.com/victor-ortega-rivera" target="_blank">GitHub</a>
+    </div>
+</div>
+
+<!-- PERFIL -->
 <section>
-    <h2>Sobre mí</h2>
+    <h2>Perfil Profesional</h2>
     <p>
-        Ingeniero en Mecatrónica con más de 5 años de experiencia en mantenimiento técnico,
-        instrumentación industrial y optimización de procesos electromecánicos.
-        Especializado en sensores, PLCs y sistemas de control.
+        Ingeniero en Mecatrónica con más de 5 años de experiencia en mantenimiento industrial,
+        instrumentación y optimización de procesos. Especialista en PLCs, sensores y sistemas de control.
     </p>
 
     <p>
-        Actualmente me estoy especializando en análisis de datos y machine learning,
-        aplicando Python y herramientas modernas para mantenimiento predictivo.
-    </p>
-
-    <p>
-        Conoce más en 
-        <a href="https://www.linkedin.com/in/victor-ortega-rivera-data-analyst" target="_blank">
-            mi perfil de LinkedIn
-        </a>.
+        Actualmente enfocado en Data Science, aplicando Python y Machine Learning
+        para mantenimiento predictivo y análisis de datos.
     </p>
 </section>
 
+<!-- LOGROS -->
 <section>
-    <h2>Experiencia Profesional</h2>
+    <h2>Logros Clave</h2>
+    <ul>
+        <li>Incremento del 60% en productividad en procesos industriales</li>
+        <li>Optimización de mantenimiento preventivo en taller</li>
+        <li>Implementación de modelos de Machine Learning</li>
+    </ul>
+</section>
 
-    <h3>Proyecto Data Science | TripleTen</h3>
+<!-- EXPERIENCIA -->
+<section>
+    <h2>Experiencia</h2>
+
+    <h3>Data Science | TripleTen</h3>
     <p>2025 - Actualidad</p>
-    <ul>
-        <li>Modelos de regresión, clasificación y clustering</li>
-        <li>Uso de Python, Pandas, Scikit-learn y SQL</li>
-        <li>Análisis de datos para toma de decisiones</li>
-    </ul>
 
-    <h3>Encargado de Servicio Técnico | SHIKIMOTO HONDA</h3>
+    <h3>Servicio Técnico | Honda</h3>
     <p>2023 - Actualidad</p>
-    <ul>
-        <li>Supervisión de flujo de trabajo en taller</li>
-        <li>Coordinación de mantenimiento preventivo</li>
-        <li>Liderazgo de equipo y mejora de productividad</li>
-    </ul>
 
     <h3>Instrumentista | Chocolatera Ibarra</h3>
     <p>2021 - 2023</p>
-    <ul>
-        <li>Instalación y configuración de sensores industriales</li>
-        <li>Mejora del 60% en productividad</li>
-        <li>Optimización de procesos de producción</li>
-    </ul>
 </section>
 
+<!-- PROYECTOS -->
 <section>
-    <h2>Educación</h2>
-    <ul>
-        <li>Ingeniería Mecatrónica – TecNM Campus Colima (2016-2021)</li>
-        <li>Técnico Eléctrico – CBTis 19 (2013-2016)</li>
-    </ul>
+    <h2>Proyectos</h2>
+
+    <div class="proyectos">
+
+        <div class="card">
+            <h3>Modelo Predictivo</h3>
+            <p>Predicción de fallas usando Machine Learning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Análisis de Datos</h3>
+            <p>Exploración y visualización con Python.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automatización</h3>
+            <p>Optimización de procesos industriales.</p>
+        </div>
+
+    </div>
 </section>
 
-<section>
-    <h2>Habilidades</h2>
-    <ul>
-        <li>PLC y sistemas de control</li>
-        <li>Instalaciones eléctricas y diagnóstico de fallas</li>
-        <li>Python, SQL, MongoDB</li>
-        <li>Machine Learning (Regresión, Clasificación, Clustering)</li>
-        <li>Mantenimiento industrial</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Certificaciones</h2>
-    <ul>
-        <li>Programación con Python – Tecnológico de Monterrey</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Idiomas</h2>
-    <ul>
-        <li>Español – Nativo</li>
-        <li>Inglés – Intermedio Alto (B2)</li>
-    </ul>
-</section>
-
+<!-- CONTACTO -->
 <section>
     <h2>Contacto</h2>
-    <p>¿Tienes alguna propuesta? ¡Conectemos!</p>
-
-    <div class="contact-links">
-        <a href="mailto:victortegarivera@gmail.com">📧 Email</a>
-        <a href="https://www.linkedin.com/in/victor-ortega-rivera-data-analyst" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/victor-ortega-rivera" target="_blank">🐙 GitHub</a>
+    <div class="contacto">
+        <a href="mailto:victortegarivera@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/victor-ortega-rivera-data-analyst">LinkedIn</a>
+        <a href="https://github.com/victor-ortega-rivera">GitHub</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 - Víctor Ortega Rivera | Portafolio Profesional</p>
+    <p>© 2026 - Víctor Ortega Rivera</p>
 </footer>
 
 </body>
